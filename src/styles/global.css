@@ -69,3 +69,9 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root {
+  --light : #F8FAFB;
+  --dark : #293135;
+  --accent : #00A4E9;
+}
