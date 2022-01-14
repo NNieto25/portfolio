@@ -1,0 +1,10 @@
+.skills_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_container > *{
+    margin: 25px 100px;
+}

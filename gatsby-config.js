@@ -16,5 +16,13 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
+    'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `skills`,
+        path: `${__dirname}/src/images/skills/`,
+      },
+    },
 ],
 }
