@@ -75,3 +75,34 @@ h6 {
   --dark : #293135;
   --accent : #00A4E9;
 }
+
+.subtitle{
+  color: var(--accent);
+  font-size: 4rem;
+}
+
+h1{
+  display: inline;
+  color : var(--dark);
+  font-size: 6rem;
+}
+
+h2{
+  color: var(--accent);
+  font-size: 6rem;
+  text-align: center;
+  padding: 40px 0;
+}
+
+section{
+  min-height: 100vh;
+}
+
+section:nth-child(odd){
+  background-color: var(--light);
+}
+
+section:nth-child(even){
+  background-color: var(--dark);
+}
+

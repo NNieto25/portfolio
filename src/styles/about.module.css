@@ -1,0 +1,26 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.section h3{
+    color: var(--accent);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section p{
+    padding-top: 30px;
+    text-align: center;
+    color: var(--light);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.section_container{
+    padding: 200px 0px;
+    display: flex;
+    justify-content: space-around;
+}
