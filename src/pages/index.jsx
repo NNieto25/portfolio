@@ -5,6 +5,7 @@ import About from "../components/About"
 import Skills from "../components/Skills"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
+import Footer from "../components/Footer"
 
 export default function Home({data}) {
   return (
@@ -13,6 +14,7 @@ export default function Home({data}) {
     <Projects images={data.project}/>
     <Skills data = {data.skills} />
     <About/>
+    <Footer/>
     </>
   )
 }
