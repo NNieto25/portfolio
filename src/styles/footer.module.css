@@ -9,11 +9,11 @@
     cursor: pointer;
 }
 
-.footer > div{
+.footer > a{
     border-radius: 10px;
 } 
 
-.footer > div:hover{ 
+.footer > a:hover{ 
     background-color: var(--dark);
     transform: scale(1.2);
     transition: 1.5s;

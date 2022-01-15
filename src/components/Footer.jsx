@@ -4,18 +4,11 @@ import React from "react"
 import * as styles from "../styles/footer.module.css"
 
 const Footer = () => {
-  const iconSize = 72
-  const onClickHandler = url => {
-    window.open(url, "_blank")
-  }
-
-  const mailMessage = () => {
-    window.open("mailto:nnieto.dev@gmail.com")
-  }
+  const iconSize = 72;
 
   return (
     <footer className={styles.footer}>
-      <Link to="mailto:nnieto.dev@gmail.com" target="_blank" rel="noreferrer">
+      <a href="mailto:nnieto.dev@gmail.com" target="_blank" rel="noreferrer">
         <StaticImage
           alt="Mail Icon"
           src="../images/email.png"
@@ -23,7 +16,7 @@ const Footer = () => {
           width={iconSize}
           title="Mail: nnieto.dev@gmail.com"
         />
-      </Link>
+      </a>
 
       <Link to="https://github.com/NNieto25" target="_blank" rel="noreferrer">
         <StaticImage

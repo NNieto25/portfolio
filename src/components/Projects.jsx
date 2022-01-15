@@ -6,7 +6,7 @@ const Projects = ({images}) => {
         {
             name: "Password Generator",
             technologies: ["HTML", "CSS", "JavaScript", "ReactJS", "TypeScript"],
-            description: "Web App for creating random and strong password. I’ve used it for renew all my accounts passwords. ",
+            description: "Web App for creating random and strong passwords. I've used it for renewing all my accounts' passwords.",
             live: "https://nnieto25.github.io/Password-Generator/", 
             repo: "https://github.com/NNieto25/Password-Generator",
             photo: images.edges[2].node.childImageSharp
@@ -14,7 +14,7 @@ const Projects = ({images}) => {
         {
             name: "Social Network",
             technologies: ["HTML", "CSS", "JavaScript", "ReactJS"],
-            description: "Web app of a social network where you can manage a CRUD for your own user post, you can give a like, comment, and save a post of anybody.",
+            description: "Web app of a social network where you can manage a CRUD for your user post, you can give a like, comment, and save a post of anybody.",
             live: "https://nestornieto.github.io/pw/", 
             repo: "https://github.com/NestorNieto/pw",
             photo: images.edges[0].node.childImageSharp
@@ -30,7 +30,7 @@ const Projects = ({images}) => {
         {
             name: "Portfolio",
             technologies: ["HTML", "CSS", "JavaScript", "ReactJS", "Gatsby"],
-            description: "My own web page, just where you are 😳.",
+            description: "My own website, right where you are 😳.",
             live: "http://localhost:8000/", 
             repo: "https://github.com/NNieto25/portfolio",
             photo: images.edges[3].node.childImageSharp
