@@ -3,7 +3,6 @@ import React from "react"
 import * as styles from "../styles/skill.module.css"
 
 const Skill = ({data}) => {
-    console.info(data);
     return (
         <div className={styles.skill}>
             <div className={styles.circle}>

@@ -4,20 +4,22 @@ import Presentation from "../components/Presentation"
 import About from "../components/About"
 import Skills from "../components/Skills"
 import { graphql } from "gatsby"
+import Projects from "../components/Projects"
 
 export default function Home({data}) {
   return (
     <>
     <Presentation/>
+    <Projects images={data.project}/>
+    <Skills data = {data.skills} />
     <About/>
-    <Skills data = {data} />
     </>
   )
 }
 
 export const pageQuery = graphql`
 query skills {
-  allFile(filter: {sourceInstanceName: {eq: "skills"}}) {
+  skills: allFile(filter: {sourceInstanceName: {eq: "skills"}}) {
     edges {
       node {
         childImageSharp {
@@ -27,6 +29,16 @@ query skills {
       }
     }
   }
-}
 
+  project: allFile(filter: {sourceInstanceName: {eq: "projects"}}) {
+    edges {
+      node {
+        childImageSharp {
+          gatsbyImageData(width: 400)
+        }
+        name
+      }
+    }
+  }
+}
 `
