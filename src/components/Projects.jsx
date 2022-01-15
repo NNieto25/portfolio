@@ -31,7 +31,7 @@ const Projects = ({images}) => {
             name: "Portfolio",
             technologies: ["HTML", "CSS", "JavaScript", "ReactJS", "Gatsby"],
             description: "My own website, right where you are 😳.",
-            live: "http://localhost:8000/", 
+            live: "https://nnieto.dev/", 
             repo: "https://github.com/NNieto25/portfolio",
             photo: images.edges[3].node.childImageSharp
         }
