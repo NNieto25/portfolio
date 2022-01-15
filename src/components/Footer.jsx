@@ -1,54 +1,59 @@
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import * as styles from "../styles/footer.module.css"
 
 const Footer = () => {
-  const iconSize = 72;
-  const onClickHandler = (url) => {
-    window.open(url, "_blank");
+  const iconSize = 72
+  const onClickHandler = url => {
+    window.open(url, "_blank")
   }
-  
+
   const mailMessage = () => {
     window.open("mailto:nnieto.dev@gmail.com")
   }
 
   return (
     <footer className={styles.footer}>
-      <StaticImage
-        alt="Mail Icon"
-        src="../images/email.png"
-        placeholder="blurred"
-        width={iconSize}
-        onClick={mailMessage}
-        title="Mail: nnieto.dev@gmail.com"
-      />
+      <Link to="mailto:nnieto.dev@gmail.com" target="_blank">
+        <StaticImage
+          alt="Mail Icon"
+          src="../images/email.png"
+          placeholder="blurred"
+          width={iconSize}
+          title="Mail: nnieto.dev@gmail.com"
+        />
+      </Link>
 
-      <StaticImage
-        alt="GitHub icon"
-        src="../images/GitHub.png"
-        placeholder="blurred"
-        width={iconSize}
-        onClick={() => onClickHandler("https://github.com/NNieto25")}
-        title="GitHub Profile"
-      />
+      <Link to="https://github.com/NNieto25" target="_blank">
+        <StaticImage
+          alt="GitHub icon"
+          src="../images/GitHub.png"
+          placeholder="blurred"
+          width={iconSize}
+          title="GitHub Profile"
+        />
+      </Link>
 
-      <StaticImage
-        alt="LinkedIn icon"
-        src="../images/linkedin.png"
-        placeholder="blurred"
-        width={iconSize}
-        onClick={() => onClickHandler("https://github.com/NNieto25")}
-        title="LinkedIn Profile"
-      />
+      <Link to="https://github.com/NNieto25" target="_blank">
+        <StaticImage
+          alt="LinkedIn icon"
+          src="../images/linkedin.png"
+          placeholder="blurred"
+          width={iconSize}
+          title="LinkedIn Profile"
+        />
+      </Link>
 
-      <StaticImage
-        alt="Resume icon"
-        src="../images/cv.png"
-        placeholder="blurred"
-        width={iconSize}
-        onClick={() => onClickHandler("/resume.pdf")}
-        title="Resume"
-      />
+      <Link to="/resume.pdf" target="_blank">
+        <StaticImage
+          alt="Resume icon"
+          src="../images/cv.png"
+          placeholder="blurred"
+          width={iconSize}
+          title="Resume"
+        />
+      </Link>
     </footer>
   )
 }
