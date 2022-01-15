@@ -10,6 +10,8 @@ import Footer from "../components/Footer"
 export default function Home({data}) {
   return (
     <>
+    <title>NNieto Portfolio</title>
+    <meta name="description" content="Website of Nestor Nieto, Front End Developer."/>
     <Presentation/>
     <Projects images={data.project}/>
     <Skills data = {data.skills} />

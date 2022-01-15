@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <Link to="mailto:nnieto.dev@gmail.com" target="_blank">
+      <Link to="mailto:nnieto.dev@gmail.com" target="_blank" rel="noreferrer">
         <StaticImage
           alt="Mail Icon"
           src="../images/email.png"
@@ -25,7 +25,7 @@ const Footer = () => {
         />
       </Link>
 
-      <Link to="https://github.com/NNieto25" target="_blank">
+      <Link to="https://github.com/NNieto25" target="_blank" rel="noreferrer">
         <StaticImage
           alt="GitHub icon"
           src="../images/GitHub.png"
@@ -35,7 +35,7 @@ const Footer = () => {
         />
       </Link>
 
-      <Link to="https://github.com/NNieto25" target="_blank">
+      <Link to="https://github.com/NNieto25" target="_blank" rel="noreferrer">
         <StaticImage
           alt="LinkedIn icon"
           src="../images/linkedin.png"
@@ -45,7 +45,7 @@ const Footer = () => {
         />
       </Link>
 
-      <Link to="/resume.pdf" target="_blank">
+      <Link to="https://nnieto.dev/resume.pdf" target="_blank" rel="noreferrer">
         <StaticImage
           alt="Resume icon"
           src="../images/cv.png"

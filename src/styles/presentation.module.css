@@ -1,5 +1,12 @@
 .presentation{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .presentation{
+        text-align: center;
+    }
 }
