@@ -10,9 +10,9 @@ const Presentation = () => {
         placeholder="blurred"
         layout="fixed"
       />
-      <div>
+      <div className="front_title">
         <h1>
-          Hi, I'm <br /> Nestor Nieto
+          Hi, I'm Nestor Nieto
         </h1>
         <p className="subtitle">Front End Developer</p>
       </div>

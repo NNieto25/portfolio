@@ -1,6 +1,5 @@
 import React from "react";
 import Skill from "../components/Skill"
-import { graphql } from "gatsby";
 import * as styles from "../styles/skills.module.css"
 const Skills = ({data}) => {
     return (

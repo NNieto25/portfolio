@@ -82,9 +82,32 @@ h6 {
 }
 
 h1{
-  display: inline;
+  display: inline-block;
   color : var(--dark);
-  font-size: 6rem;
+  font-size: 5rem;
+  max-width: 510px;
+}
+
+@media (max-width: 1210px){
+  h1{
+    text-align: center;
+    max-width: 100%;
+    font-size: 6.5vw;
+  }
+
+  .subtitle{
+    font-size: 6.5vw;
+    text-align: center;
+  }
+
+  .front_title{
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  h2{
+    font-size: 9vw !important;
+  }
 }
 
 h2{

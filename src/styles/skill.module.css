@@ -17,3 +17,15 @@
     padding: 10px 0px;
     font-size: 2rem;
 }
+
+.skill:hover .circle{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.skill:hover p{
+    background: linear-gradient(to right bottom, var(--accent), #85b5ca);
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 1s;
+ }

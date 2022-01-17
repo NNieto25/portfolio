@@ -9,3 +9,9 @@
 .skills_container > *{
     margin: 25px 100px;
 }
+
+@media (max-width: 821px){
+    .skills_container > *{
+        margin: 40px 70px;
+    }
+}
