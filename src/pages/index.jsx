@@ -8,11 +8,12 @@ import Projects from "../components/Projects"
 import Footer from "../components/Footer"
 
 export default function Home({data}) {
+  console.log(data);
   return (
     <>
     <title>NNieto Portfolio</title>
     <meta name="description" content="Website of Nestor Nieto, Front End Developer."/>
-    <Presentation/>
+    <Presentation image = {data.illustrations}/>
     <Projects images={data.project}/>
     <Skills data = {data.skills} />
     <About/>
@@ -35,6 +36,17 @@ query skills {
   }
 
   project: allFile(filter: {sourceInstanceName: {eq: "projects"}}) {
+    edges {
+      node {
+        childImageSharp {
+          gatsbyImageData(width: 400)
+        }
+        name
+      }
+    }
+  }
+
+  illustrations: allFile(filter: {sourceInstanceName: {eq: "images"}}) {
     edges {
       node {
         childImageSharp {

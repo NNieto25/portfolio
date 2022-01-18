@@ -7,3 +7,9 @@
 .projects_container > *{
     margin:50px;
 }
+
+@media (max-width: 500px){
+    .projects_container > *{
+        margin: 30px 0px;
+    }
+}

@@ -1,5 +1,5 @@
 .container{
-    width: min(90%, 400px);
+    width: min(80%, 400px);
     background-color: var(--light);
     border-radius: 10px;
 }
@@ -64,4 +64,33 @@
     background-color: var(--accent);
     outline:  var(--accent) solid 3px;
     transition: 1s;
+}
+
+@media (max-width: 380px){
+    .title{
+        font-size: 1.2rem;
+    }
+
+    .label_container{
+        margin: 0;
+    }
+    
+    .label{
+        font-size: 0.8rem;
+        margin: 5px;
+        padding: 6px 8px;
+    }
+
+    .description{
+        margin: 10px 12px;
+
+    }
+
+    .button_container{
+        padding: 10px;
+    }
+
+    .button{
+        font-size: 0.8rem;
+    }
 }
