@@ -1,10 +1,11 @@
 import { GatsbyImage} from "gatsby-plugin-image"
 import React from "react"
 import * as styles from "../styles/skill.module.css"
+import "aos/dist/aos.css"
 
 const Skill = ({data}) => {
     return (
-        <div className={styles.skill}>
+        <div className={styles.skill} data-aos="fade-up">
             <div className={styles.circle}>
                 <GatsbyImage
                     image={data.childImageSharp.gatsbyImageData}

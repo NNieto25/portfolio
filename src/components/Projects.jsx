@@ -1,7 +1,10 @@
 import React from "react"
 import ProjectCard from "./ProjectCard";
 import * as styles from "../styles/projects.module.css"
+
+
 const Projects = ({images}) => {
+
     const projects = [
         {
             name: "Password Generator",
@@ -39,9 +42,9 @@ const Projects = ({images}) => {
 
     return (
         <section>
-            <h2>Projects</h2>
+            <h2 data-aos="fade-left" data-aos-once="true">Projects</h2>
             <div className={styles.projects_container}>
-                {projects.map(project => <ProjectCard project={project} key={project.name} />)}
+                {projects.map(project => <ProjectCard project={project} key={project.name}  />)}
             </div>
         </section>
     )

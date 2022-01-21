@@ -1,13 +1,14 @@
 import React from "react"
 import * as styles from "../styles/about.module.css"
 import { StaticImage } from "gatsby-plugin-image"
+import "aos/dist/aos.css"
 
 const About = () => {
   return (
     <section>
-      <h2>About Me</h2>
+      <h2 data-aos="fade-left" data-aos-once="true">About Me</h2>
       <div className={styles.section_container}>
-        <div className={styles.section}>
+        <div className={styles.section} data-aos="fade-up">
           <StaticImage
             src="../images/diamond.png"
             alt="A diamond"
@@ -19,7 +20,7 @@ const About = () => {
           <p>I love to learn new things every time, I'm not afraid of building complex apps, constantly challenging myself while enjoying the process.</p>
         </div>
 
-        <div className={styles.section}>
+        <div className={styles.section} data-aos="fade-up" data-aos-delay="300">
         <StaticImage
             src="../images/group.png"
             alt="Three people"
@@ -30,7 +31,7 @@ const About = () => {
           <p>I'm, almost every time,  the project leader; the person you can ask for the next thing to do or something you don't understand. When I am not, I try to come up with ideas or solutions.</p>
         </div>
 
-        <div className={styles.section}>
+        <div className={styles.section} data-aos="fade-up" data-aos-delay="600">
         <StaticImage
             src="../images/coffee.png"
             alt="A coffee cup"

@@ -11,7 +11,7 @@ const Presentation = ({ image }) => {
         placeholder="blurred"
         width={132}
       />
-      <div className={styles.front_title}>
+      <div className={styles.front_title} data-aos="fade-up" data-aos-once="true">
         <h1>Hi, I'm Nestor Nieto</h1>
         <p className="subtitle">Front End Developer</p>
       </div>

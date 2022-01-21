@@ -2,14 +2,15 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import * as styles from "../styles/project-card.module.css"
 
+import "aos/dist/aos.css"
+
 const ProjectCard = ({project}) => {
     const onClickHandler = (url) => {
         window.open(url, "_blank");
     } 
 
-
     return (
-        <div className={styles.container}>
+        <div className={styles.container} data-aos="fade-up">
             <GatsbyImage
                     image={getImage(project.photo)}
                     alt="logo"

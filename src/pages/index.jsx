@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "../styles/global.css"
 import Presentation from "../components/Presentation"
 import About from "../components/About"
@@ -6,9 +6,12 @@ import Skills from "../components/Skills"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
 import Footer from "../components/Footer"
+import Aos from "aos"
 
 export default function Home({data}) {
-  console.log(data);
+  useEffect(() => {
+    Aos.init({duration:1200});
+  }, []);
   return (
     <>
     <title>NNieto Portfolio</title>
