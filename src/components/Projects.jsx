@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard"
 import * as styles from "../styles/projects.module.css"
 
 const Projects = ({ images }) => {
+    console.log(images);
   const projects = [
     {
       name: "Password Generator",
