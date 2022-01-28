@@ -11,9 +11,12 @@ const Presentation = ({ image }) => {
         placeholder="blurred"
         width={132}
       />
-      <div className={styles.front_title} data-aos="fade-up" data-aos-once="true">
-        <h1>Hi, I'm Nestor Nieto</h1>
-        <p className="subtitle">Front End Developer</p>
+      <div
+        className={styles.front_title}
+      >
+        <h1 data-aos="flip-down"
+        data-aos-once="true">Hi, I'm Nestor Nieto</h1>
+        <p className="subtitle" data-aos="flip-up" data-aos-once="true" data-aos-delay="1000"> Front End Developer</p>
       </div>
     </section>
   )
