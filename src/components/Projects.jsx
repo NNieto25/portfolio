@@ -3,7 +3,6 @@ import ProjectCard from "./ProjectCard"
 import * as styles from "../styles/projects.module.css"
 
 const Projects = ({ images }) => {
-    console.log(images);
   const projects = [
     {
       name: "Password Generator",
@@ -12,7 +11,7 @@ const Projects = ({ images }) => {
         "Web App for creating random and strong passwords. I've used it for renewing all my accounts' passwords.",
       live: "https://nnieto25.github.io/Password-Generator/",
       repo: "https://github.com/NNieto25/Password-Generator",
-      photo: images.edges[2].node.childImageSharp,
+      photo: images.edges[1].node.childImageSharp,
     },
     {
       name: "Social Network",
@@ -30,7 +29,7 @@ const Projects = ({ images }) => {
         "This project is a Star Wars manager where you can see a wide variety of starships and select the people to be aboard.",
       live: "https://nnieto25.github.io/StarWarsManager/",
       repo: "https://github.com/NNieto25/StarWarsManager",
-      photo: images.edges[1].node.childImageSharp,
+      photo: images.edges[2].node.childImageSharp,
     },
     {
       name: "Portfolio",

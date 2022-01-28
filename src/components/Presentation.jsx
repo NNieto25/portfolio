@@ -2,7 +2,6 @@ import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import * as styles from "../styles/presentation.module.css"
 const Presentation = ({ image }) => {
-  console.log(image)
   return (
     <section className={styles.presentation}>
       <GatsbyImage
