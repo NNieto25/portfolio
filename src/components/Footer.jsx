@@ -38,7 +38,7 @@ const Footer = () => {
         />
       </Link>
 
-      <Link to="https://nnieto.dev/resume.pdf" target="_blank" rel="noreferrer">
+      <Link to="https://nnieto.dev/Resume.pdf" target="_blank" rel="noreferrer">
         <StaticImage
           alt="Resume icon"
           src="../images/cv.png"
